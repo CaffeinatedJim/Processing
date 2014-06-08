@@ -1,0 +1,9 @@
+// 	Render PNGs
+	saveFrame("redcircles-####.png");
+
+	// Or
+	  if (frameCount<1000) saveFrame("red-dots-####.png");
+
+//  CMD Line Make Video
+ffmpeg -movflags +faststart -y -pattern_type glob -i '/Users/Jim/Documents/Processing/XXXXXX/redcircles-*.png' -vcodec libx264 -r 30 -q 100 -pass 1 -s 1920x1080 -vb 6M -threads 0 -f mp4 '/Users/Jim/Documents/Processing/~renders/XXXXXX.mp4'
+
