@@ -5,3 +5,10 @@ application.linux64
 application.windows32
 application.windows64
 application.macosx
+
+HYPE_Processing-staging/
+libraries/
+modes/
+processing.sublime-project
+processing.sublime-workspace
+~other-peoples/
