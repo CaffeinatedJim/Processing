@@ -12,3 +12,10 @@ modes/
 processing.sublime-project
 processing.sublime-workspace
 ~other-peoples/
+
+*.gif
+*.png
+*.mp4
+*.class
+*.java
+*.log*

@@ -14,6 +14,9 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
+// import gifAnimation.*;
+// GifMaker gifExport;
+
 int h = 0;
 
 public void setup() {
@@ -22,6 +25,9 @@ public void setup() {
 	smooth();
 	background(0xff000000);
 	noLoop();
+
+	// gifExport = new GifMaker(this, "export.gif");
+	// gifExport.setRepeat(0); // = loop forever
 }
 
 public void draw() {
@@ -32,6 +38,14 @@ public void draw() {
 	ellipse(h, h, h, h);
 	h = h + 1;
 	loop();
+
+	// if (frameCount % 6 == 0 && frameCount < 240) {
+	// gifExport.setDelay(8); // = speed of the animated GIF
+	// gifExport.addFrame();
+	// }
+	// if (frameCount>240) gifExport.finish();
+
+	if (frameCount<1000) saveFrame("rope-####.png");
 }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "--full-screen", "--bgcolor=#666666", "--hide-stop", "build" };
