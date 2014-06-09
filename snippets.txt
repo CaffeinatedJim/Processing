@@ -9,4 +9,4 @@ ffmpeg -movflags +faststart -y -pattern_type glob -i '/Users/Jim/Documents/Proce
 
 ffmpeg -y -pattern_type glob -i '/Users/Jim/Documents/Processing/sketches/rope/build/rope-*.png' -vcodec libx264 -r 60 -q 100 -pass 1 -s 1920x1080 -vb 6M -threads 0 -f mp4 '/Users/Jim/Documents/Processing/sketches/rope/build/rope.mp4'
 
-ffmpeg -y -pattern_type glob -i '/Users/Jim/Documents/Processing/sketches/spinning-rope/render/spinning-rope-*.png' -vcodec libx264 -r 60 -q 100 -pass 1 -s 1280x720 -vb 6M -threads 0 -f mp4 '/Users/Jim/Documents/Processing/sketches/spinning-rope/render/rope.mp4'
+ffmpeg -y -pattern_type glob -i '/Users/Jim/Documents/Processing/sketches/spinning rope/build/render/spinning-rope-*.png' -vcodec libx264 -r 60 -q 100 -pass 1 -s 1280x720 -vb 6M -threads 0 -f mp4 '/Users/Jim/Documents/Processing/sketches/spinning rope/build/render/spinning-rope.mp4'
