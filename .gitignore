@@ -19,3 +19,17 @@ processing.sublime-workspace
 *.class
 *.java
 *.log*
+
+*/build-tmp/*
+*/build-tmp/build.class
+
+*build-tmp/
+*/build-tmp
+
+sketches/*/build/build-tmp/build.class
+sketches/*/build/build-tmp/source/build.java
+
+sketches/rope/build/build-tmp/build.class
+sketches/rope/build/build-tmp/source/build.java
+
+sketches/Creative Coding Sketches/
