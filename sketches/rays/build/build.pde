@@ -1,4 +1,4 @@
-int a = 20;
+int a = 1;
 
 void setup() {
 	size(1280, 720);
