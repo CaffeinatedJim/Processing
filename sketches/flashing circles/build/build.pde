@@ -1,5 +1,5 @@
 void setup() {
-	size(500, 500);
+	size(600, 600);
 	smooth();
 	background(#000000);
 	ellipseMode(CENTER);
@@ -34,6 +34,10 @@ void draw() {
 			}
 		}
 	}
+
 	// Increase Framerate speed
 	f++;
+
+	// Export PNG for Video:
+	//if (frameCount<30) saveFrame("render/flashing-circles-####.gif");
 }
