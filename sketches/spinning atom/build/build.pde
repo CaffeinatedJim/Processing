@@ -43,7 +43,4 @@ void draw() {
   }
 
   else {frameCount = 0;}
-
-  // Export PNG for Video:
-  saveFrame("render/spinning-atom-####.gif");
 }
