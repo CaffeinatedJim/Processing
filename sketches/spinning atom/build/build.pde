@@ -1,21 +1,11 @@
-// Export GIF Part 1
-//import gifAnimation.*;
-//GifMaker gifExport;
-
 void setup() {
   size(600, 600);
   background(#000000);
   smooth();
-  ellipseMode(CENTER);
   rectMode(CENTER);
-  noFill();
+  stroke(#40FFDC);
   strokeWeight(a);
   frameRate(30);
-
-  // Export GIF Part 2
-  //gifExport = new GifMaker(this, "render/spinning-atom.gif");
-  //gifExport.setRepeat(0); // = loop forever
-
 }
 
 color[] palette = {
@@ -32,33 +22,28 @@ int dist = 10;
 float angle = random(0,360);
  
 void draw() {
-    int m = frameCount * dist;
+  int m = frameCount * dist;
 
-    if (m < width) {
-        background(#000000);
-        int paletteRandom = int(random(palette.length));
-        fill(palette[paletteRandom],200);
-        stroke(#40FFDC);
+  if (m < width + a) {
+    background(#000000);
+    int paletteRandom = int(random(palette.length));
+    fill(palette[paletteRandom],200);
 
-        translate(width/2, height/2);
-        rotate(m); 
+    translate(width/2, height/2);
+    rotate(m); 
 
-        if (m < width/4) {
-          rect(0, 0, m, m, 5);
-        }
-        else {
-          rect(0, 0, m, m, 50);
-        }
-
+    if (m < width/4) {
+      rect(0, 0, m, m, 5);
     }
+
     else {
-        frameCount = 0;
+      rect(0, 0, m, m, 50);
     }
-    
-      // Export GIF Part 3
-  //if (frameCount < 600) {
-  //gifExport.setDelay(4); // = speed of the animated GIF
-  //gifExport.addFrame();
-  //}
-  //if (frameCount>600) gifExport.finish();
+
+  }
+
+  else {frameCount = 0;}
+
+  // Export PNG for Video:
+  saveFrame("render/spinning-atom-####.gif");
 }
