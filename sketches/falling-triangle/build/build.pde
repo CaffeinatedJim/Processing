@@ -22,6 +22,6 @@ void draw() {
 		rand = random(n/2, width);
 	}
 
-	if (frameCount % 4 == 0 && frameCount < 201) saveFrame("render/tuesday-####.gif");
-
+	// if (frameCount % 4 == 0 && frameCount < 201) saveFrame("render/tuesday-####.gif");
+	
 }
