@@ -170,5 +170,5 @@ void draw() {
 		background(#000000);
 	}
 
-	saveFrame("render/stripes-####.gif");
+	//saveFrame("render/stripes-####.gif");
 }
