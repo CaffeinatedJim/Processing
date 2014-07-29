@@ -15,5 +15,5 @@ void draw() {
   background(#000000);
   translate(width/2, height/2);
   rotate(radians(m));
-  ellipse(0, 0, 500, 125);
+  ellipse(0, 0, 500, 175);
 }
