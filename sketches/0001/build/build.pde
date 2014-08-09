@@ -22,5 +22,5 @@ void draw() {
         ellipse(width/2,height/2,b*100,height-50);
         c++;
     }
-    saveFrame("render/0001-####.gif");
+    // saveFrame("render/0001-####.gif");
 }
