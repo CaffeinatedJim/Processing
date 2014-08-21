@@ -56,5 +56,5 @@ void draw() {
         a = 0;
     }
     
-    saveFrame("render/0002-####.gif");
+    //saveFrame("render/0002-####.gif");
 }
