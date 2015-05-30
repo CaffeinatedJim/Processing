@@ -22,5 +22,5 @@ void draw() {
         stroke(200, 0, 0, 60);
         ellipse(width/2,height/2,b*1000,height*1.5);
     }
-    saveFrame("render/the-globe-red-####.gif");
+    //saveFrame("render/the-globe-red-####.gif");
 }
